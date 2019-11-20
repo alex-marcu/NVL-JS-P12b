@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function getRandomNumber() {
+			return (Math.floor((Math.random()*50)+1));
+		}
+
+		var RandomNumber=getRandomNumber();
+		var Impares = [];
+		var Pares = [];
+			
+			for (var i = RandomNumber; i <= 50; i++) {
+				if ((i % 2)==0) 
+				{
+			Pares.push(i);
+		} 
+		else {
+			Impares.push(i);
+		}
+			}
+			
+		console.log(Impares);
+		console.log(Pares);
+		console.log(RandomNumber);
+	</script>
+</body>
+</html>
